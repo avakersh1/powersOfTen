@@ -7,6 +7,8 @@ public class CameraLookAtBall : MonoBehaviour
 
 	public GameObject ball;
 	Vector3 lookAtOffset;
+
+	
 	// Start is called before the first frame update
 	void Start()
 	{

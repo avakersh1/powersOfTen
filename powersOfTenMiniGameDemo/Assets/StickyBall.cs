@@ -34,16 +34,28 @@ public class StickyBall: MonoBehaviour {
   public GameObject group4;
   bool group4Unlocked = false;
 
-//     public GameObject group5;
-//   bool group5Unlocked = false;
+    public GameObject group5;
+  bool group5Unlocked = false;
 
-//   public GameObject group6;
-//   bool group6Unlocked = false;
+  public GameObject group6;
+  bool group6Unlocked = false;
 
-//     public GameObject group7;
-//   bool group7Unlocked = false;
+    public GameObject group7;
+  bool group7Unlocked = false;
 
-  // Pickup Sound Reference
+   public GameObject group8;
+  bool group8Unlocked = false;
+
+   public GameObject group9;
+  bool group9Unlocked = false;
+
+   public GameObject group10;
+  bool group10Unlocked = false;
+
+   public GameObject group11;
+  bool group11Unlocked = false;
+
+  // Pickup Sound Referenc
   public AudioClip pickupSound;
 
   public GameObject sizeUI;
@@ -92,7 +104,7 @@ public class StickyBall: MonoBehaviour {
   	}
 	} else if (group2Unlocked == false) {
 
-  	if (size >= 1.8f) {
+  	if (size >= 1.5f) {
     	group2Unlocked = true;
     	for (int i = 0; i < group2.transform.childCount; i++) {
       	group2.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
@@ -102,7 +114,7 @@ public class StickyBall: MonoBehaviour {
   	}
 	} else if (group3Unlocked == false) {
 
-  	if (size >= 2.8f) {
+  	if (size >= 2f) {
     	group3Unlocked = true;
     	for (int i = 0; i < group3.transform.childCount; i++) {
       	group3.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
@@ -112,7 +124,7 @@ public class StickyBall: MonoBehaviour {
 	  }	
 	} else if (group4Unlocked == false) {
 
-  	if (size >= 3.8f) {
+  	if (size >= 3.5f) {
     	group4Unlocked = true;
     	for (int i = 0; i < group4.transform.childCount; i++) {
       	group4.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
@@ -120,46 +132,81 @@ public class StickyBall: MonoBehaviour {
     	// Change distance between camera and ball
     	distanceToCamera = 6.6f;
     	}
-	}
 
-// } else if (group5Unlocked == false) {
 
-//   	if (size >= 4.8f) {
-//     	group5Unlocked = true;
-//     	for (int i = 0; i < group5.transform.childCount; i++) {
-//       	group5.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
-//     	// Change distance between camera and ball
-// 		}
-//     	distanceToCamera = 6.9f;
-//     	}
-// }
+} else if (group5Unlocked == false) {
+
+  	if (size >= 4f) {
+    	group5Unlocked = true;
+    	for (int i = 0; i < group5.transform.childCount; i++) {
+      	group5.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
+    	// Change distance between camera and ball
+		}
+    	distanceToCamera = 6.9f;
+    	}
 	  
 
-// } else if (group6Unlocked == false) {
+} else if (group6Unlocked == false) {
 
-//   	if (size >= 5.8f) {
-//     	group6Unlocked = true;
-//     	for (int i = 0; i < group6.transform.childCount; i++) {
-//       	group6.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
-// 		}
-//     	// Change distance between camera and ball
-//     	distanceToCamera = 7.2f;
-//     	}
-// }
-// } else if (group7Unlocked == false) {
+  	if (size >= 4.5f) {
+    	group6Unlocked = true;
+    	for (int i = 0; i < group6.transform.childCount; i++) {
+      	group6.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
+		}
+    	// Change distance between camera and ball
+    	distanceToCamera = 7.2f;
+    	}
+} else if (group7Unlocked == false) {
 
-//   	if (size >= 6.8f) {
-//     	group7Unlocked = true;
-//     	for (int i = 0; i < group7.transform.childCount; i++) {
-//       	group7.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
-// 		}
-//     	// Change distance between camera and ball
-//     	distanceToCamera = 7.5f;
-//     	}
+  	if (size >= 5f) {
+    	group7Unlocked = true;
+    	for (int i = 0; i < group7.transform.childCount; i++) {
+      	group7.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
+		}
+    	// Change distance between camera and ball
+    	distanceToCamera = 7.5f;
+    	}
+} else if (group8Unlocked == false) {
 
-//   	}
+  	if (size >= 5.5f) {
+    	group8Unlocked = true;
+    	for (int i = 0; i < group8.transform.childCount; i++) {
+      	group8.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
+		}
+    	// Change distance between camera and ball
+    	distanceToCamera = 7.8f;
+		}
+} else if (group9Unlocked == false) {
 
-// 	}
+  	if (size >= 6f) {
+    	group9Unlocked = true;
+    	for (int i = 0; i < group9.transform.childCount; i++) {
+      	group9.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
+		}
+    	// Change distance between camera and ball
+    	distanceToCamera = 6.1f;
+		}
+} else if (group10Unlocked == false) {
+
+  	if (size >= 6.5f) {
+    	group10Unlocked = true;
+    	for (int i = 0; i < group10.transform.childCount; i++) {
+      	group10.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
+		}
+    	// Change distance between camera and ball
+    	distanceToCamera = 6.4f;
+		}
+} else if (group11Unlocked == false) {
+
+  	if (size >= 7f) {
+    	group8Unlocked = true;
+    	for (int i = 0; i < group8.transform.childCount; i++) {
+      	group8.transform.GetChild(i).GetComponent < Collider > ().isTrigger = true;
+		}
+    	// Change distance between camera and ball
+    	distanceToCamera = 6.7f;
+  	}
+	}
   }
     
   // Pick up Sticky Objects
